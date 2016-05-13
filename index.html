@@ -1,47 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <!-- links custom stylesheet -->
-  <link rel="stylesheet" href="style.css">
-  <!-- links letter-drop stylesheet  -->
-  <link rel="stylesheet" href="assests/letter-drop-master/letter-drop.css">
-  <!-- links fullpage stylesheet -->
-  <link rel="stylesheet" type="text/css" href="bower_components/fullpage.js/jquery.fullPage.css" />
-  <title>Razaik Boparai </title>
+    <meta charset="UTF-8">
+    <title>Razaik Boparai Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="author" content="Razaik Boparai" />
+    <meta name="description" content="Razaik Boparai Portfolio" />
+
+    <link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Cardo|Oswald|Unica+One|Josefin+Sans|Exo" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="bower_components/lightbox2/src/css/lightbox.css" rel="stylesheet">
+
+    <link href="assests/animate.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="bower_components/fullpage.js/jquery.fullPage.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div id="container">
+
+  <div id="fullpage">
 
     <!-- Sections Start   -->
-    <div id="name">
-      Razaik Boparai
+
+    <!-- Home Section -->
+    <div class="section home">
+      <h1 class="name animated fadeInDown">RAZAIK<span>BOPARAI</span></h1>
+      <p class="bio animated fadeInUp delay-05s"><em>Web Developer</em> | <em>Coffee Lover</em></p>
+      <p class="arrow"></p>
+
     </div>
 
-    <div id="bio">
-      Full Stack Developer
+    <!-- About Section  using particle.js-->
+    <div class="section about">
+
+      <div class="text">
+        <h3>Hello_</h3>
+        <h4>
+          I am an electrical engineer, now a full stack web developer who occasionally likes to watch movies and TV shows.
+          I am a mess without a cup of coffee.
+          I love everything about coding.
+          I aspire to learn, grow and contribute.
+        </h4>
+      </div>
+      <div id ="particles-js"></div>
     </div>
 
-    <div id="canvas">
-      <canvas id="canvas-particles"></canvas>
+    <!-- Portfolio section  -->
+    <div class="section portfolio">
+
+      <div class="slide animated fadeInDown" id="slide1">
+       <h3>Work_</h3>
+       <h3>ShopMate<a href="http://shopmate.herokuapp.com/" target="_blank" id="btn"><i class="material-icons">open_in_new</i> Visit Website </a></h3>
+       <a href="images/shopmate/1.png" data-lightbox="1.png">
+        <img src="images/shopmate/1.png">
+       </a>
+       <a href="images/shopmate/2.png" data-lightbox="1.png">
+        <img src="images/shopmate/2.png">
+       </a><br>
+       <a href="images/shopmate/3.png" data-lightbox="1.png">
+        <img src="images/shopmate/3.png">
+       </a>
+       <a href="images/shopmate/4.png" data-lightbox="1.png">
+        <img src="images/shopmate/4.png">
+       </a>
+       <h4 class="project-info">
+        <span class="rainbow">ShopMate</span> is a Full Stack CRUD application designed maintian shopping lists.
+          It lets users view, edit and add shopping lists according to their personal need.
+        <span class="rainbow">Technologies:</span> Node.js, Express.js, JavaScript, HTML5/CSS5, PostgresSQL, RESTful Routes
+       </h4>
+      </div>
+
+      <div class="slide" id="slide2">
+        <h3>Work_</h3>
+        <h3>Quizzer<a href="https://github.com/Razaik25/quizzer" target="_blank" id="btn"><i class="material-icons">open_in_new</i> Visit Website </a></h3>
+        <a href="images/quizzer/1.jpeg" data-lightbox="1.png">
+          <img src="images/quizzer/1.jpeg">
+        </a>
+        <a href="images/quizzer/2.jpeg" data-lightbox="1.png">
+          <img src="images/quizzer/2.jpeg">
+        </a><br>
+        <a href="images/quizzer/3.jpeg" data-lightbox="1.png">
+          <img src="images/quizzer/3.jpeg">
+        </a>
+        <a href="images/quizzer/4.jpeg" data-lightbox="1.png">
+          <img src="images/quizzer/4.jpeg">
+        </a>
+
+         <h4 class="project-info">
+          <span class="rainbow">Quizzer</span> is score based quiz trivia game for iOS devices.
+          Users can choose from different categories such as celebrities, coding, general knowledge, trivia, maths.
+          <span class="rainbow">Technologies:</span> React-Native, JavaScript, Firebase, Node.js, PostgresSQL, Express.js
+         </h4>
+
+      </div>
+
+      <div class="slide" id="slide3">
+        <h3>Work_</h3>
+        <h3>Citydipity<a href="https://citydipity.herokuapp.com" target="_blank" id="btn"><i class="material-icons">open_in_new</i> Visit Website </a></h3>
+        <a href="images/citydipity/1.png" data-lightbox="1.png">
+          <img src="images/citydipity/1.png">
+        </a>
+        <a href="images/citydipity/2.png" data-lightbox="1.png">
+          <img src="images/citydipity/2.png">
+        </a><br>
+        <a href="images/citydipity/3.png" data-lightbox="1.png">
+          <img src="images/citydipity/3.png">
+        </a>
+        <a href="images/citydipity/4.png" data-lightbox="1.png">
+          <img src="images/citydipity/4.png">
+        </a>
+
+         <h4 class="project-info">
+          <span class="rainbow">Citydipity</span> is a dynamic multi player scavenger hunt web application.
+          Worked in groups of three to create this geo-location game. I worked on front end with React Js, Google Maps API, JavaScript, HTML5/CSS3 and User tokens.
+          <span class="rainbow">Technologies:</span> React, Google Maps API, Node.js, PostgresSQL, Express.js, HTML5/CSS3
+         </h4>
+      </div>
+
+      <div class="slide" id="slide4">
+        <h3>Work_</h3>
+        <h3>Simon Says<a href="http://razaik25.github.io/Simon_Says" target="_blank" id="btn"><i class="material-icons">open_in_new</i> Visit Website </a></h3>
+        <a href="images/simonsays/1.png" data-lightbox="1.png">
+          <img src="images/simonsays/1.png">
+        </a>
+        <a href="images/simonsays/2.png" data-lightbox="1.png">
+          <img src="images/simonsays/2.png">
+        </a><br>
+        <a href="images/simonsays/3.png" data-lightbox="1.png">
+          <img src="images/simonsays/3.png">
+        </a>
+
+         <h4 class="project-info">
+          <span class="rainbow">Simon Says</span> is a two player in-browser web memory game based on classic game of Simon Says.<br>
+          <span class="rainbow">Technologies:</span> JavaScript, jQuery, HTML5/CSS3
+         </h4>
+      </div>
+
+      <div class="slide" id="slide5">
+        <h3>Work_</h3>
+        <h3>SmartWave</h3>
+          <a href="images/smartwave/1.png" data-lightbox="1.png">
+           <img src="images/smartwave/1.png">
+         </a>
+         <a href="images/smartwave/2.png" data-lightbox="1.png">
+           <img src="images/smartwave/2.png"><br>
+         </a>
+         <a href="images/smartwave/3.png" data-lightbox="1.png">
+           <img src="images/smartwave/3.png">
+         </a>
+        <a href="images/smartwave/4.png" data-lightbox="1.png">
+           <img src="images/smartwave/4.png">
+        </a>
+
+         <h4 class="project-info">
+          <span class="rainbow">SmartWave</span> or Smart Wireless Application for Vehicles Energy is a web app to direct a smart meter to activate the primary coil for wireless charging of an electric vehicle.<br>
+          <span class="rainbow">Technologies:</span> Dedicated server in University of Windsor, Arduino/Xbee pairs, PHP, RPM sensors, HTML/CSS
+         </h4>
+      </div>
+
     </div>
+
+    <!-- Contact section, use trianglify, email  -->
+    <div class="section contact">
+
+
+
+    </div>
+
+
+
 
   </div>
 
 
 
-
-  <!-- linking to jquery and jquery ui scripts -->
   <script src="bower_components/jquery/dist/jquery.min.js"></script>
-  <script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
-  <!-- linking fullpage.js script  -->
   <script src="bower_components/fullpage.js/jquery.fullPage.js"></script>
-  <!-- linking to  letter-drop script -->
-  <script src="assests/letter-drop-master/jquery.letter-drop.min.js"></script>
-  <!-- linking to main script file  -->
+  <script src="bower_components/particles.js/particles.min.js"></script>
+  <script src="bower_components/lightbox2/src/js/lightbox.js"></script>
   <script src="app.js"></script>
 </body>
 </html>
