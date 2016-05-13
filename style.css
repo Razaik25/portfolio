@@ -34,7 +34,7 @@
 }
 
 .arrow {
-  background: url('/Users/razaikboparai/dev/portfolio/images/arrow.png') no-repeat center bottom;
+  background: url('images/arrow.png') no-repeat center bottom;
   padding-bottom: 70px;
 }
 
@@ -60,7 +60,7 @@ h4 {
 }
 
 .home {
-  background: url('/Users/razaikboparai/dev/portfolio/images/bg.jpg') no-repeat;
+  background: url('images/bg.jpg') no-repeat;
   background-size: cover;
   background-position: 47% center;
   background-repeat: no-repeat;
