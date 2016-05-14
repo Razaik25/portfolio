@@ -1,10 +1,4 @@
 
-/*
-@font-face {
-  font-family: 'bromello';
-  src: url('/Users/razaikboparai/dev/portfolio/assests/fonts/bromello.otf');
- }*/
-
  body {
   font-family: 'Varela';
  }
@@ -48,7 +42,6 @@ h3 {
   text-transform: uppercase;
   font-family: 'Oswald';
   letter-spacing: 2px;
-  /*background-color: #c2dde6;*/
 }
 
 
@@ -102,7 +95,6 @@ h4 {
   margin: 0 auto;
   font-family: 'Oswald';
   text-transform: none;
-  /*color: #8c9398;*/
   letter-spacing: 0.5px;
   width: 26em;
   word-wrap: break-word;
@@ -115,7 +107,6 @@ h4 {
   font-weight: 500;
   margin: 0 0 0 50px;
   padding: 10px 30px 11px 30px;
-  /*border: 2px solid #334431;*/
   background: transparent  ;
   transition: background .5s ease;
   -webkit-transition: background .5s ease;
@@ -150,7 +141,6 @@ h4 {
   transform:scale(1.25);
   padding-bottom: 1px;
   z-index: 1;
-  /*opacity: 0.8;*/
 }
 
  .section.portfolio img {
@@ -170,11 +160,6 @@ h4 {
   text-align: center;
   z-index: -1;
  }
-
- /*to render trainglify pattern */
- /*.fp-tableCell {
-   width: 0%;
- }*/
 
  .contact>canvas {
   position: absolute;
@@ -214,10 +199,8 @@ h4 {
 #linkedin {
   width: 12%;
   margin-bottom: -3px;
-  /*margin-left: 40px;*/
   position: relative;
-left: 2em;
-
+  left: 2em;
 }
 
 .heart {
