@@ -135,11 +135,11 @@ h4 {
    color: #0060B6;
  }
 
- a:hover{
+  a:hover{
   color:#00A0C6;
  }
 
-img:hover {
+.section.portfolio img:hover {
   transition: border-width 300ms ease-in-out;
   border: 7px solid #e05915;
   background: rgba(100, 194, 158, 0.8);
@@ -153,9 +153,9 @@ img:hover {
   /*opacity: 0.8;*/
 }
 
- img {
+ .section.portfolio img {
   position: relative;
-  height: 9rem;
+  height: 11rem;
  }
 
  .rainbow {
@@ -166,26 +166,63 @@ img:hover {
    background-clip: text;
  }
 
-#logo {
-  /*font-family: 'bromello';*/
-  font-size: 20px;
-  color: #fff;
+ .section.contact {
+  text-align: center;
+  z-index: -1;
+ }
 
+ /*to render trainglify pattern */
+ /*.fp-tableCell {
+   width: 0%;
+ }*/
+
+ .contact>canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
 }
 
-#name {
-  font-size: 139px;
-  text-align: center;
-  margin-top: 2em;
-  color: #fff;
-}
-
-#intro {
-  text-align: center;
+.email {
   font-size: 25px;
-  color: #fff;
-  margin-top: 4em;
 }
+
+.contact-text {
+  margin: 8em auto;
+  color: #f2efe8;
+  font-family: 'Oswald';
+  text-transform: none;
+  /*color: #8c9398;*/
+  letter-spacing: 2.5px;
+  width: 26em;
+  word-wrap: break-word;
+  padding-top: 1em;
+}
+
+.lastmodified {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 12px;
+  margin: 6.5em;
+}
+
+#github {
+  width: 10%;
+}
+
+#linkedin {
+  width: 12%;
+  margin-bottom: -3px;
+  margin-left: 40px;
+
+}
+
+.heart {
+  color: red;
+}
+
+
 
 
 

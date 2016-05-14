@@ -15,7 +15,7 @@ $(document).ready(function(){
 		css3: true
 	});
 
-  // invoking particles.js, had to put JSON file manully as the file is not hosted on a server 
+  // invoking particles.js, had to put JSON file manually as the file is not hosted on a server
   particlesJS("particles-js", {
     "particles": {
       "number": {
@@ -72,7 +72,7 @@ $(document).ready(function(){
       },
       "move": {
         "enable": true,
-        "speed": 6,
+        "speed": 4,
         "direction": "none",
         "random": false,
         "straight": false,
@@ -110,7 +110,7 @@ $(document).ready(function(){
           "size": 40,
           "duration": 2,
           "opacity": 8,
-          "speed": 3
+          "speed": 2
         },
         "repulse": {
           "distance": 200,
@@ -127,5 +127,45 @@ $(document).ready(function(){
     "retina_detect": true
   });
 
+
+  // trainglify for contact page
+  var pattern = Trianglify({
+  height: window.innerHeight,
+  width: window.innerWidth,
+  cell_size: 60,
+  variance: 0.75,
+  x_colors: ["#1c9099", "#a6bddb", "#667467"],
+  // x_colors: 'YlGnBu',
+  // seed: 'qwf5b'
+  // x_colors: 'random'
+  });
+
+  $(".contact").append(pattern.canvas());
+
+  // for window resize to tackle the varying width and height of the canvas
+  $( window ).resize(function() {
+    console.log('window is resized');
+    pattern.opts.height = window.innerHeight;
+    pattern.opts.width = window.innerWidth;
+    $(".contact canvas").remove();
+    $(".contact").append(pattern.canvas());
+  });
+
+  // change the variance on mouse movement
+  // not working, have to fix
+  // $(".contact").on("mouseover",function(event){
+  //
+  //    console.log('before',pattern.opts.variance);
+  //   $(".contact canvas").remove();
+  //   // pattern.opts.variance = Math.random().toFixed(2);
+  //
+  //
+  //   // pattern.opts.variance = (event.pageY / 500).toFixed(2);
+  //   $(".contact").append(pattern.canvas());
+  //   console.log('after',pattern.opts.variance);
+  //
+  // });
+
+  $('.lastmodified').text("Last modified on " + document.lastModified.split(" ")[0]);
 
 });
