@@ -21,15 +21,22 @@
   word-spacing: 1px;
   line-height: 25px;
   font-size: 20px;
+  margin-left: -9px;
 }
 
 .delay-05s {
   -webkit-animation-delay: 0.5s;
 }
 
+.delay-09s {
+  -webkit-animation-delay: 0.9s;
+}
+
 .arrow {
   background: url('images/arrow.png') no-repeat center bottom;
   padding-bottom: 70px;
+  width: 5%;
+  margin: 0 auto;
 }
 
 .arrow:hover {
