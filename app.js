@@ -1,95 +1,171 @@
 $(document).ready(function(){
 
-  $('#bio').hide();
   console.log('script is linked');
 
-  // calling the letter drop function on  name
-  $('#name').letterDrop();
-    setTimeout(function(){
-        $('#bio').show().fadeIn('slow');
-    },4000);
-
-    // initializing fullpage.js
-    // $('#fullpage').fullpage({
-		// 		anchors: ['Home', 'About', 'Portfolio'],
-		// 		sectionsColor: ['#B81D18', '#1BBC9B', '#7E8F7C'],
-		// 		navigation: true,
-		// 		navigationPosition: 'right',
-		// 		navigationTooltips: ['Home', 'About', 'Portfolio'],
-		// 		responsiveWidth: 900
-		// 	});
-
-    // declaring the varibles for initializing the canvas
-    let width, height, canvas, ctx, circles;
-    // calling the initCanvas function
-    initCanvas();
-
-    function initCanvas() {
-        width = window.innerWidth;   // gets the inner hieght/width of the browser
-        height = window.innerHeight;
-
-        // gets the canvas-particles canvas
-        canvas = document.getElementById('canvas-particles');
-        // sets the width/height of the canvas equal to that of the browser
-        canvas.width = width;
-        canvas.height = height;
-        // declaring 2D rendering of the canvas element
-        ctx = canvas.getContext('2d');
-
-        // create circle particles
-        circles = [];
-        for(var i = 0; i < width*0.75; i++) {
-            // creates new circle using Circle constructor
-            var c = new Circle();
-            circles.push(c);
-        }
-        // calling animate function to animate the circles
-        animate();
-    }
-
-
-    function animate() {
-      ctx.clearRect(0,0,width,height);
-        for(var i in circles) {
-          circles[i].draw();
-        }
-
-      // requests the browser to call the animate function
-      window.requestAnimationFrame(animate);
-    }
-
-    // Canvas manipulation
-    function Circle() {
-      // saving the current instance of this
-      let self = this;
-
-        // constructor
-        (() => {
-            this.pos = {};
-            init();
-            // console.log(this);
-        })();
-
-
-        function init() {
-            self.pos.x = Math.random()*width;
-            self.pos.y = height+Math.random()*100;
-            self.alpha = 0.3+Math.random()*0.3;
-            self.scale = 0.2+Math.random()*0.3;
-            self.velocity = Math.random();
-        }
-
-        this.draw = function() {
-            if(this.alpha <= 0) {
-                init();
-            }
-            this.pos.y -= this.velocity;
-            this.alpha -= 0.0005;
-            ctx.beginPath();
-            ctx.arc(this.pos.x, this.pos.y, this.scale*10, 0, 2 * Math.PI, false);
-            ctx.fillStyle = 'rgba(255,255,255,'+ this.alpha+')';
-            ctx.fill();
-        };
-    }
-
+  // calling fullpage.js to scroll down on arrow click
+  $('.arrow').on('click', () => {
+    $.fn.fullpage.moveSectionDown();
   });
+
+  // invoking fullpage.js
+  $('#fullpage').fullpage({
+		sectionsColor: [ '#fff', '#c0dfd9', '#f6f1ed', '#fff'],
+    anchors: ['Home', 'About', 'Portfolio', 'Contact'],
+		menu: '#menu',
+		css3: true
+	});
+
+  // invoking particles.js, had to put JSON file manually as the file is not hosted on a server
+  particlesJS("particles-js", {
+    "particles": {
+      "number": {
+        "value": 50,
+        "density": {
+          "enable": true,
+          "value_area": 800
+        }
+      },
+      "color": {
+        "value": "#173e43"
+      },
+      "shape": {
+        "type": "circle",
+        "stroke": {
+          "width": 0,
+          "color": "#283018"
+        },
+        "polygon": {
+          "nb_sides": 3
+        },
+        "image": {
+          "src": "img/github.svg",
+          "width": 100,
+          "height": 100
+        }
+      },
+      "opacity": {
+        "value": 0.5,
+        "random": false,
+        "anim": {
+          "enable": false,
+          "speed": 1,
+          "opacity_min": 0.1,
+          "sync": false
+        }
+      },
+      "size": {
+        "value": 3,
+        "random": true,
+        "anim": {
+          "enable": false,
+          "speed": 40,
+          "size_min": 0.1,
+          "sync": false
+        }
+      },
+      "line_linked": {
+        "enable": true,
+        "distance": 150,
+        "color": "#173e43",
+        "opacity": 0.4,
+        "width": 1
+      },
+      "move": {
+        "enable": true,
+        "speed": 4,
+        "direction": "none",
+        "random": false,
+        "straight": false,
+        "out_mode": "out",
+        "bounce": false,
+        "attract": {
+          "enable": false,
+          "rotateX": 600,
+          "rotateY": 1200
+        }
+      }
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": {
+          "enable": false,
+          "mode": "repulse"
+        },
+        "onclick": {
+          "enable": false,
+          "mode": "push"
+        },
+        "resize": true
+      },
+      "modes": {
+        "grab": {
+          "distance": 400,
+          "line_linked": {
+            "opacity": 1
+          }
+        },
+        "bubble": {
+          "distance": 400,
+          "size": 40,
+          "duration": 2,
+          "opacity": 8,
+          "speed": 2
+        },
+        "repulse": {
+          "distance": 200,
+          "duration": 0.4
+        },
+        "push": {
+          "particles_nb": 4
+        },
+        "remove": {
+          "particles_nb": 2
+        }
+      }
+    },
+    "retina_detect": true
+  });
+
+
+  // trainglify for contact page
+  var pattern = Trianglify({
+  height: window.innerHeight,
+  width: window.innerWidth,
+  cell_size: 60,
+  variance: 0.75,
+  x_colors: ["#1c9099", "#a6bddb", "#667467"],
+  // x_colors: 'YlGnBu',
+  // seed: 'qwf5b'
+  // x_colors: 'random'
+  });
+
+  $(".contact").append(pattern.canvas());
+
+  // for window resize to tackle the varying width and height of the canvas
+  $( window ).resize(function() {
+    console.log('window is resized');
+    pattern.opts.height = window.innerHeight;
+    pattern.opts.width = window.innerWidth;
+    $(".contact canvas").remove();
+    $(".contact").append(pattern.canvas());
+  });
+
+  // change the variance on mouse movement
+  // not working, have to fix
+  // $(".contact").on("mouseover",function(event){
+  //
+  //    console.log('before',pattern.opts.variance);
+  //   $(".contact canvas").remove();
+  //   // pattern.opts.variance = Math.random().toFixed(2);
+  //
+  //
+  //   // pattern.opts.variance = (event.pageY / 500).toFixed(2);
+  //   $(".contact").append(pattern.canvas());
+  //   console.log('after',pattern.opts.variance);
+  //
+  // });
+
+  $('.lastmodified').text("Last modified on " + document.lastModified.split(" ")[0]);
+
+});
