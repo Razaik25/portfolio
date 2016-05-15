@@ -9,7 +9,7 @@ $(document).ready(function(){
 
   // invoking fullpage.js
   $('#fullpage').fullpage({
-		sectionsColor: [ '#fff', '#c0dfd9', '#f6f1ed', '#fff'],
+		sectionsColor: [ '#fff', '#c2dde6', '#f6f1ed', '#fff'],
     anchors: ['Home', 'About', 'Portfolio', 'Contact'],
 		menu: '#menu',
 		css3: true
@@ -172,7 +172,7 @@ $(document).ready(function(){
   $(".rotate").textrotator({
     animation: "dissolve",
     separator: "|",
-    speed: 4000 
+    speed: 4000
   });
 
 });
