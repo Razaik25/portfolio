@@ -11,12 +11,13 @@
     <link href='http://fonts.googleapis.com/css?family=Varela' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Cardo|Oswald|Unica+One|Josefin+Sans|Exo" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="bower_components/lightbox2/src/css/lightbox.css" >
 
+    <link rel="stylesheet" type="text/css" href="bower_components/lightbox2/src/css/lightbox.css" >
+    <link rel="stylesheet" type="text/css" href="assests/animate.css" >
+    <link rel="stylesheet" type="text/css" href="bower_components/fullpage.js/jquery.fullPage.css">
+    <link rel="stylesheet" type="text/css" href="assests/simpletextrotator.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link href="images/favicon.ico" rel="icon" type="image/x-icon" />
-    <link href="assests/animate.css" rel="stylesheet">
-    <link rel="stylesheet"  href="bower_components/fullpage.js/jquery.fullPage.css">
-    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -27,8 +28,9 @@
     <!-- Home Section -->
     <div class="section home">
       <h1 class="name animated fadeInDown">RAZAIK<span>BOPARAI</span></h1>
-      <p class="bio animated fadeInUp delay-05s"><em>Full Stack Web Developer</em> | <em>Electrical Engineer</em></p>
-      <p class="arrow animated fadeIn delay-09s "></p>
+      <p class="bio animated fadeInUp delay-05s"><em>Web Developer</em> | <em>Electrical Engineer</em></p>
+      <i class="material-icons animated fadeInUp delay-09s" id="arrow">arrow_drop_down</i>
+      <!-- <p class="arrow animated fadeIn delay-09s "></p> -->
 
     </div>
 
@@ -38,10 +40,9 @@
       <div class="text">
         <h3>Hello_</h3>
         <h4>
-          I am an electrical engineer with Math minor and a full stack web developer with background in React, React Native, JavaScript, Ruby, Ruby-on-Rails, C#, Python, HTML5/CSS3, jQuery, Relational databases, Git (Version Control), AJAX, Node.js, and Express.js.
-          I occasionally like to watch movies and TV shows.
-          I am a mess without a cup of coffee.
-          I love everything about coding.
+          I am a full stack web developer who majored in electrical engineering and recevied a minor in math.<br> <br> Skills:<span class="rotate" id="skills"> Javascript, Ruby, Python , C#| React, React-Native, Ruby-on-Rails, jQuery | AJAX, Relational Databases, Node.js,Express.js</span><br><br>
+          I have international exprience having worked in Canada and India. I look forward to being involved in varoius projects where i can utilize my exprience and background.<br>.<br>
+          Professional capacity aside, I am always looking for the next best movie recommendation, I cannot function in the mornings without a cup of coffee and I love anything and everything that involves coding.
           I aspire to learn, grow and contribute.
         </h4>
       </div>
@@ -167,10 +168,7 @@
     <div class="section contact">
       <div class="contact-text">
         <h3>Contact_</h3>
-         I have international work experience from having worked in Canada and India.
-         If you have project that you would like for me to be involved in or just want to say hi, please feel free to reach me at
-        <a href="mailTo:razaikb@gmail.com">razaikb@gmail.com</a><br>
-        <p>I am available for freelancing.</p><br>
+        Please feel free to contact me at <a href="mailTo:razaikb@gmail.com">razaikb@gmail.com</a><br> for any networking, freelance or project ideas and involvement.<br><br>
           <a href="http://www.github.com/Razaik25" target="_blank">
             <img id="github" src="images/github.png" alt="">
           </a>
@@ -180,7 +178,9 @@
           </a>
           <br>
           <br>
-          Made with <span class="heart">❤︎</span> using Bower,jQuery,Fullpage,Lightbox,Particles.js,<br>Trainglify,Chrome and Atom
+          <div class="site-design">
+            Made with <span class="heart">❤︎</span> using Bower,jQuery,Fullpage,Lightbox,Particles.js,<br>Trainglify,Chrome and Atom
+          </div>
           <p class="lastmodified"></p>
       </div>
 
@@ -192,6 +192,7 @@
   <script src="bower_components/fullpage.js/jquery.fullPage.js"></script>
   <script src="bower_components/particles.js/particles.min.js"></script>
   <script src="bower_components/lightbox2/src/js/lightbox.js"></script>
+  <script src="assests/jquery.simple-text-rotator.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/trianglify/0.4.0/trianglify.min.js"></script>
   <script src="app.js"></script>
 </body>

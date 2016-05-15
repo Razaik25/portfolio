@@ -3,7 +3,7 @@ $(document).ready(function(){
   console.log('script is linked');
 
   // calling fullpage.js to scroll down on arrow click
-  $('.arrow').on('click', () => {
+  $('#arrow').on('click', () => {
     $.fn.fullpage.moveSectionDown();
   });
 
@@ -167,5 +167,12 @@ $(document).ready(function(){
   // });
 
   $('.lastmodified').text("Last modified on " + document.lastModified.split(" ")[0]);
+
+  // text rotator
+  $(".rotate").textrotator({
+  animation: "dissolve", // You can pick the way it animates when rotating through words. Options are dissolve (default), fade, flip, flipUp, flipCube, flipCubeUp and spin.
+  separator: "|", // If you don't want commas to be the separator, you can define a new separator (|, &, * etc.) by yourself using this field.
+  speed: 3000 // How many milliseconds until the next word show.
+});
 
 });
