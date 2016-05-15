@@ -7,13 +7,13 @@
   font-size: 40px;
   letter-spacing: 12px;
   margin: 10px;
-  color: #e8edf3;
+  color: #312c32;
   /*color: #353535;*/
 
  }
 
  .name span {
-  color: #ede9ce;
+  color: #daad86;
    /*color: #a1a9b0;*/
   display: inline-block;
   letter-spacing: 12px;
@@ -21,7 +21,7 @@
 
 .bio {
   /*color: #1d2120;*/
-  color: #f6f1ed;
+  color: #c7a693;
   word-spacing: 1px;
   line-height: 25px;
   font-size: 20px;
@@ -37,10 +37,6 @@
 }
 
 #arrow {
-  /*background: url('images/arrow.png') no-repeat center bottom;*/
-  /*padding-bottom: 55px;
-  width: 5%;
-  margin: 0 auto;*/
   font-size: 5em;
   color: #22264b;
   margin-top: 0.5em;
@@ -69,7 +65,7 @@ h4 {
 }
 
 .home {
-  background: url('images/bg2.jpeg') no-repeat;
+  background: url('images/bg.jpeg') no-repeat;
   background-size: cover;
   background-position: 47% center;
   background-repeat: no-repeat;
@@ -235,8 +231,6 @@ h4 {
 .site-design {
   font-size: 13px;
 }
-
-
 
 
 
