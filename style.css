@@ -1,6 +1,10 @@
 
  body {
-  font-family: 'Varela';
+  font-family: 'Varela',sans-serif;
+  /*text-rendering: optimizeLegibility;*/
+  /*-webkit-font-smoothing: antialiased;*/
+  -webkit-transform: translate3d(0px, 0px, 0px);
+
  }
 
  .name  {
@@ -52,8 +56,10 @@
 h3 {
   color: #000;
   text-transform: uppercase;
-  font-family: 'Oswald';
+  font-family: 'Oswald',sans-serif;
   letter-spacing: 2px;
+  /*font-weight: normal;*/
+
 }
 
 
@@ -62,6 +68,8 @@ h4 {
   text-transform: uppercase;
   line-height: 28px;
   text-align: justify;
+  /*font-weight: normal;*/
+
 }
 
 .home {
@@ -79,10 +87,11 @@ h4 {
 }
 
 #skills {
-  word-wrap: none;
+  white-space: nowrap;
   text-transform: none;
   font-style: italic;
   font-size: 16px;
+  /*width: 30em;*/
 }
 
 #particles-js {
@@ -113,7 +122,7 @@ h4 {
 
  .project-info {
   margin: 0 auto;
-  font-family: 'Oswald';
+  font-family: 'Oswald',sans-serif;
   text-transform: none;
   letter-spacing: 0.5px;
   width: 26em;
@@ -122,7 +131,7 @@ h4 {
  }
 
  #btn {
-  font-family: 'Oswald';
+  font-family: 'Oswald',sans-serif;
   font-size: 14px;
   font-weight: 500;
   margin: 0 0 0 50px;
@@ -197,7 +206,7 @@ h4 {
 .contact-text {
   margin: 8em auto;
   color: #f2efe8;
-  font-family: 'Oswald';
+  font-family: 'Oswald', sans-serif;
   text-transform: none;
   /*color: #8c9398;*/
   letter-spacing: 2.5px;
@@ -226,6 +235,7 @@ h4 {
 
 .heart {
   color: red;
+  font-size: 16px;
 }
 
 .site-design {

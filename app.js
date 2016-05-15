@@ -3,15 +3,16 @@ $(document).ready(function(){
   console.log('script is linked');
 
   // calling fullpage.js to scroll down on arrow click
-  $('#arrow').on('click', () => {
+  $('#arrow').on('click', function(){
     $.fn.fullpage.moveSectionDown();
   });
 
   // invoking fullpage.js
   $('#fullpage').fullpage({
-		sectionsColor: [ '#fff', '#c2dde6', '#f6f1ed', '#fff'],
+		sectionsColor: [ '#fff', '#c0dfd9', '#f6f1ed', '#fff'],
     anchors: ['Home', 'About', 'Portfolio', 'Contact'],
 		menu: '#menu',
+    // responsive: 900
 		css3: true
 	});
 
