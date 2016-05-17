@@ -275,9 +275,12 @@ h4 {
   .contact-text {
     letter-spacing: 1.5px;
     width: 22em;
-    padding-top: 1em;
+    padding-top: 0em;
     font-size: 15px;
   }
+
+
+
 
 }
 
@@ -324,16 +327,26 @@ h4 {
    font-size: 16px;
   }
 
-  h3 {
-   margin-left: 10.5px;
-  }
-
   .contact-text {
    letter-spacing: 1.5px;
    width: 22em;
-   padding-top: 1em;
+   padding-top: 0em;
    font-size: 15px;
   }
+
+  h4 {
+    line-height: 25px;
+  }
+
+  .section.portfolio h3 {
+    margin-left: 1rem;
+  }
+
+  .section.portfolio h4 {
+    font-weight: normal;
+  }
+
+
 
 }
 
