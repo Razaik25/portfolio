@@ -323,12 +323,9 @@ h4 {
   }
 
   .project-info {
-   margin-left: 1em;
-   margin-right: 1em;
-   letter-spacing: -1.5px;
    width: 18em;
    padding-top: 1em;
-   font-size: 14px;
+   font-size: 11px;
   }
 
   .contact-text {
@@ -348,6 +345,11 @@ h4 {
 
   .section.portfolio h4 {
     font-weight: normal;
+  }
+
+  #btn {
+    margin: 0px 0 0 47px;
+    padding: 10px 28px 11px 9px;
   }
 
 
