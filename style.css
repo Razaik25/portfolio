@@ -116,11 +116,15 @@ h4 {
  .project-info{
   margin: 0 auto;
   font-family: 'Oswald';
-  text-transform: none;
+  /*text-transform: none;*/
   letter-spacing: 0.5px;
   width: 26em;
-  word-wrap: break-word;
+  /*word-wrap: break-word;*/
   padding-top: 1em;
+  /*font-weight: normal;*/
+  color: #8c9398;
+  font-size: 14px;
+
 
  }
 
@@ -269,7 +273,7 @@ h4 {
     letter-spacing: -0.5px;
     width: 22em;
     padding-top: 1em;
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .contact-text {
@@ -324,7 +328,7 @@ h4 {
    letter-spacing: -1.5px;
    width: 18em;
    padding-top: 1em;
-   font-size: 16px;
+   font-size: 14px;
   }
 
   .contact-text {
