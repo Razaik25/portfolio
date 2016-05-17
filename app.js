@@ -176,4 +176,11 @@ $(document).ready(function(){
     speed: 4000
   });
 
+  // since css property of background-clip only works in Chrome and safari
+  var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+  var isSafari = /Safari/.test(navigator.userAgent) && /Apple Computer/.test(navigator.vendor);
+  if(!isChrome && !isSafari) {
+    $('.rainbow').css({"color": "#e05038", "font-size": "20px"});
+  }
+
 });

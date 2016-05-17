@@ -3,8 +3,7 @@
   font-family: 'Varela',sans-serif;
   /*text-rendering: optimizeLegibility;*/
   /*-webkit-font-smoothing: antialiased;*/
-  -webkit-transform: translate3d(0px, 0px, 0px);
-
+  /*-webkit-transform: translate3d(0px, 0px, 0px);*/
  }
 
  .name  {
@@ -44,9 +43,6 @@
 
 #arrow:hover {
   cursor: pointer;
-  /*transform: scale(1.3);*/
-  /*-webkit-transition: all .6s ease;
-  -webkit-transform:scale(1.2);*/
 }
 
 h3 {
@@ -54,17 +50,18 @@ h3 {
   text-transform: uppercase;
   font-family: 'Oswald',sans-serif;
   letter-spacing: 2px;
-  /*font-weight: normal;*/
+  font-weight: normal;
 
 }
 
 
 h4 {
   color: #8c9398;
-  text-transform: uppercase;
+  /*text-transform: uppercase;*/
   line-height: 28px;
   text-align: justify;
-  /*font-weight: normal;*/
+  /*font-weight: 400;*/
+  font-weight: 500;
 
 }
 
@@ -116,15 +113,17 @@ h4 {
   border-color: transparent #431c5d transparent transparent;
 }
 
- .project-info {
+ .project-info{
   margin: 0 auto;
-  font-family: 'Oswald',sans-serif;
+  font-family: 'Oswald';
   text-transform: none;
   letter-spacing: 0.5px;
   width: 26em;
   word-wrap: break-word;
   padding-top: 1em;
+
  }
+
 
  #btn {
   font-family: 'Oswald',sans-serif;
@@ -240,14 +239,124 @@ h4 {
 
 
 
-@media (min-width: 400px) {}
+@media only screen and (max-width: 500px) {
+  .text {
+    width: 24em;
+    margin: 0 auto;
+    font-size: 13px;
+  }
 
-@media (min-width: 550px) {}
+  .section.portfolio img {
+    position: relative;
+    height: 7rem;
+    width: 7rem;
+  }
 
-@media (min-width: 750px) {}
+  #slide2 img {
+    position: relative;
+    height: 11rem;
+  }
 
-@media (min-width: 1000px) {}
+  .fp-controlArrow.fp-prev {
+    border-width: 20.5px 34px 20.5px 0;
+  }
 
-@media (min-width: 1200px) {}
+  .fp-controlArrow.fp-next {
+    border-width: 20.5px 0 20.5px 34px;
+  }
 
-@media (max-width: 900px) {}
+  .project-info {
+    letter-spacing: -0.5px;
+    width: 22em;
+    padding-top: 1em;
+    font-size: 16px;
+  }
+
+  .contact-text {
+    letter-spacing: 1.5px;
+    width: 22em;
+    padding-top: 1em;
+    font-size: 15px;
+  }
+
+}
+
+/*iphone 5*/
+@media screen and (device-aspect-ratio: 40/71) {
+  .text {
+    width: 24em;
+    margin: 0 auto;
+    font-size: 11px;
+  }
+
+  #skills {
+    font-size: 14px;
+    font-style: italic;
+  }
+
+  .section.portfolio img {
+    position: relative;
+    height: 7rem;
+    width: 7rem;
+  }
+
+  #slide2 img {
+    position: relative;
+    height: 8rem;
+  }
+
+  .fp-controlArrow.fp-prev {
+    border-width: 18.5px 34px 18.5px 0;
+    margin-left: -1em;
+  }
+
+  .fp-controlArrow.fp-next {
+    border-width: 18.5px 0 18.5px 34px;
+    margin-right: -1em;
+  }
+
+  .project-info {
+   margin-left: 1em;
+   margin-right: 1em;
+   letter-spacing: -1.5px;
+   width: 18em;
+   padding-top: 1em;
+   font-size: 16px;
+  }
+
+  h3 {
+   margin-left: 10.5px;
+  }
+
+  .contact-text {
+   letter-spacing: 1.5px;
+   width: 22em;
+   padding-top: 1em;
+   font-size: 15px;
+  }
+
+}
+
+@media screen and (min-device-width: 768px) {
+    /* ipad-portrait */
+    @media screen and (max-width: 896px) {
+        .logo{
+            display: none !important;
+        }
+    }
+    /* ipad-landscape */
+    @media screen and (min-width: 897px) {
+
+    }
+}
+/* iPhone */
+@media screen and (max-device-width: 480px) {
+    /* iphone-portrait */
+    @media screen and (max-width: 400px) {
+
+    }
+    /* iphone-landscape */
+    @media screen and (min-width: 401px) {
+
+    }
+}
