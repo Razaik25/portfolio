@@ -88,11 +88,14 @@ h4 {
 }
 
 #particles-js {
-  position: fixed;
+  /*position: fixed;*/
   /*top: 46em;*/
+  /*width: 100%;
+  height: 90%;*/
+  /*margin-top: -45%;*/
+  position: fixed;
   width: 100%;
-  height: 90%;
-  margin-top: -45%;
+  height: 80%;
   animation: appear 1.4s ease 0s normal forwards 1 running;
   opacity: 1;
   transform: scale(1);
@@ -283,12 +286,6 @@ h4 {
     font-size: 15px;
   }
 
-  #particles-js {
-    margin-top: -150%;
-  }
-
-
-
 
 
 }
@@ -358,9 +355,6 @@ h4 {
     padding: 10px 28px 11px 9px;
   }
 
-  #particles-js {
-    margin-top: -150%;
-  }
 
   .rainbow {
     font-size: 17px;
@@ -373,9 +367,7 @@ h4 {
 @media screen and (min-device-width: 768px) {
     /* ipad-portrait */
     @media screen and (max-width: 896px) {
-      #particles-js {
-        margin-top: -93%;
-      }
+      
     }
     /* ipad-landscape */
     @media screen and (min-width: 897px) {
