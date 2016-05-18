@@ -6,6 +6,7 @@
   /*-webkit-transform: translate3d(0px, 0px, 0px);*/
  }
 
+
  .name  {
   font-size: 40px;
   letter-spacing: 12px;
@@ -119,7 +120,7 @@ h4 {
 
  .project-info{
   margin: 0 auto;
-  font-family: 'Oswald';
+  /*font-family: 'Oswald';*/
   /*text-transform: none;*/
   letter-spacing: 0.5px;
   width: 26em;
@@ -207,7 +208,7 @@ h4 {
 .contact-text {
   margin: 8em auto;
   color: #f2efe8;
-  font-family: 'Oswald', sans-serif;
+  /*font-family: 'Oswald', sans-serif;*/
   text-transform: none;
   /*color: #8c9398;*/
   letter-spacing: 2.5px;
@@ -245,50 +246,7 @@ h4 {
 
 
 
-@media only screen and (max-width: 500px) {
-  .text {
-    width: 24em;
-    margin: 0 auto;
-    font-size: 13px;
-  }
 
-  .section.portfolio img {
-    position: relative;
-    height: 7rem;
-    width: 7rem;
-  }
-
-  #slide2 img {
-    position: relative;
-    height: 8rem;
-    width: 6rem;
-  }
-
-  .fp-controlArrow.fp-prev {
-    border-width: 20.5px 34px 20.5px 0;
-  }
-
-  .fp-controlArrow.fp-next {
-    border-width: 20.5px 0 20.5px 34px;
-  }
-
-  .project-info {
-    letter-spacing: -0.5px;
-    width: 22em;
-    padding-top: 1em;
-    font-size: 14px;
-  }
-
-  .contact-text {
-    letter-spacing: 1.5px;
-    width: 22em;
-    padding-top: 0em;
-    font-size: 15px;
-  }
-
-
-
-}
 
 /*iphone 5*/
 @media screen and (device-aspect-ratio: 40/71) {
@@ -360,7 +318,57 @@ h4 {
     font-size: 17px;
   }
 
+  .site-design {
+    font-size: 11px;
+  }
 
+}
+
+/*other phones*/
+@media only screen and (max-width: 500px) {
+  .text {
+    width: 24em;
+    margin: 0 auto;
+    font-size: 13px;
+  }
+
+  .section.portfolio img {
+    position: relative;
+    height: 7rem;
+    width: 7rem;
+  }
+
+  #slide2 img {
+    position: relative;
+    height: 8rem;
+    width: 6rem;
+  }
+
+  .fp-controlArrow.fp-prev {
+    border-width: 20.5px 34px 20.5px 0;
+  }
+
+  .fp-controlArrow.fp-next {
+    border-width: 20.5px 0 20.5px 34px;
+  }
+
+  .project-info {
+    letter-spacing: -0.5px;
+    width: 22em;
+    padding-top: 1em;
+    font-size: 14px;
+  }
+
+  .contact-text {
+    letter-spacing: 1.5px;
+    width: 22em;
+    padding-top: 0em;
+    font-size: 15px;
+  }
+
+  .site-design {
+    font-size: 11px;
+  }
 
 }
 
@@ -373,17 +381,6 @@ h4 {
     }
     /* ipad-landscape */
     @media screen and (min-width: 897px) {
-
-    }
-}
-/* iPhone */
-@media screen and (max-device-width: 480px) {
-    /* iphone-portrait */
-    @media screen and (max-width: 400px) {
-
-    }
-    /* iphone-landscape */
-    @media screen and (min-width: 401px) {
 
     }
 }
