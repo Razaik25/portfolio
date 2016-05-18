@@ -367,7 +367,9 @@ h4 {
 @media screen and (min-device-width: 768px) {
     /* ipad-portrait */
     @media screen and (max-width: 896px) {
-      
+      #particles-js{
+        height: 60%;
+      }
     }
     /* ipad-landscape */
     @media screen and (min-width: 897px) {
