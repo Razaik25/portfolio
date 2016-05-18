@@ -89,9 +89,10 @@ h4 {
 
 #particles-js {
   position: fixed;
-  top: 46em;
+  /*top: 46em;*/
   width: 100%;
   height: 90%;
+  margin-top: -35em;
   animation: appear 1.4s ease 0s normal forwards 1 running;
   opacity: 1;
   transform: scale(1);
