@@ -43,7 +43,8 @@
 }
 
 #arrow:hover {
-  cursor: pointer;
+  cursor: crosshair;
+  opacity: 0.7;
 }
 
 h3 {
@@ -52,7 +53,6 @@ h3 {
   font-family: 'Oswald',sans-serif;
   letter-spacing: 2px;
   font-weight: normal;
-
 }
 
 
@@ -63,7 +63,6 @@ h4 {
   text-align: justify;
   /*font-weight: 400;*/
   font-weight: 500;
-
 }
 
 .home {
@@ -78,6 +77,7 @@ h4 {
   margin: 0 auto;
   width: 28em;
   word-wrap: break-word;
+  font-size: 17px;
 }
 
 #skills {
@@ -111,6 +111,10 @@ h4 {
   border-width: 26.5px 0 26.5px 34px;
   border-color: transparent transparent transparent #431c5d;
 }
+.fp-controlArrow.fp-next:hover {
+  cursor: crosshair;
+  opacity: 0.7;
+}
 
 
 .fp-controlArrow.fp-prev {
@@ -118,17 +122,22 @@ h4 {
   border-color: transparent #431c5d transparent transparent;
 }
 
+.fp-controlArrow.fp-prev:hover {
+  cursor: crosshair;
+  opacity: 0.7;
+}
+
  .project-info{
   margin: 0 auto;
   /*font-family: 'Oswald';*/
   /*text-transform: none;*/
   letter-spacing: 0.5px;
-  width: 26em;
+  width: 28em;
   /*word-wrap: break-word;*/
   padding-top: 1em;
   /*font-weight: normal;*/
   color: #8c9398;
-  font-size: 14px;
+  font-size: 16px;
  }
 
 
@@ -159,6 +168,7 @@ h4 {
 
   a:hover{
   color:#00A0C6;
+
  }
 
 .section.portfolio img:hover {
@@ -227,12 +237,22 @@ h4 {
   width: 10%;
 }
 
+#github:hover {
+  cursor: crosshair;
+  opacity: 0.7;
+}
+
 #linkedin {
   width: 12%;
   /*margin-bottom: -3px;*/
   position: relative;
   left: 2em;
   top: 5px;
+}
+
+#linkedin:hover {
+  cursor: crosshair;
+  opacity: 0.7;
 }
 
 .heart {
@@ -284,9 +304,11 @@ h4 {
   }
 
   .project-info {
-   width: 27em;
-   padding-top: 1em;
-   font-size: 9px;
+    margin: 0 auto;
+    letter-spacing: -0.5px;
+    width: 25em;
+    padding-top: 1em;
+    font-size: 11px;
   }
 
   .contact-text {
@@ -320,6 +342,14 @@ h4 {
 
   .site-design {
     font-size: 11px;
+  }
+
+  .rainbow {
+    font-size: 12px;
+  }
+
+  .lastmodified {
+    margin: 3.5em;
   }
 
 }
