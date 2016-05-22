@@ -1,3 +1,4 @@
+
 $(document).ready(function(){
 
   console.log('script is linked');
@@ -33,7 +34,7 @@ $(document).ready(function(){
         "type": "circle",
         "stroke": {
           "width": 0,
-          "color": "#283018"
+          "color": "#3fb0ac"
         },
         "polygon": {
           "nb_sides": 3
@@ -129,43 +130,21 @@ $(document).ready(function(){
   });
 
 
-  // trainglify for contact page
-  var pattern = Trianglify({
-  height: window.innerHeight,
-  width: window.innerWidth,
-  cell_size: 60,
-  variance: 0.75,
-  x_colors: ["#1c9099", "#a6bddb", "#667467"],
-  // x_colors: 'YlGnBu',
-  // seed: 'qwf5b'
-  // x_colors: 'random'
-  });
+
 
   $(".contact").append(pattern.canvas());
 
   // for window resize to tackle the varying width and height of the canvas
   $( window ).resize(function() {
     console.log('window is resized');
-    pattern.opts.height = window.innerHeight;
-    pattern.opts.width = window.innerWidth;
+    // removing the old canvas
     $(".contact canvas").remove();
-    $(".contact").append(pattern.canvas());
+    properties.height = window.innerHeight;
+    properties.width = window.innerWidth;
+    var t = Trianglify(properties);
+    $(".contact").append(t.canvas());
   });
 
-  // change the variance on mouse movement
-  // not working, have to fix
-  // $(".contact").on("mouseover",function(event){
-  //
-  //    console.log('before',pattern.opts.variance);
-  //   $(".contact canvas").remove();
-  //   // pattern.opts.variance = Math.random().toFixed(2);
-  //
-  //
-  //   // pattern.opts.variance = (event.pageY / 500).toFixed(2);
-  //   $(".contact").append(pattern.canvas());
-  //   console.log('after',pattern.opts.variance);
-  //
-  // });
 
   $('.lastmodified').text("Last modified on " + document.lastModified.split(" ")[0]);
 
@@ -183,6 +162,16 @@ $(document).ready(function(){
     $('.rainbow').css({"color": "#e05038", "font-size": "20px"});
   }
 
-
-
 });
+
+// generating trainglify pattern for contact page
+// Initially when the page loads
+var properties = {
+height: window.innerHeight,
+width: window.innerWidth,
+cell_size: 80,
+variance: 0.75,
+x_colors: 'Blues',
+seed: Math.random().toString(36).substr(2, 5)
+};
+var pattern = Trianglify(properties);
