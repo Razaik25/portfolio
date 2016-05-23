@@ -13,15 +13,15 @@ $(document).ready(function(){
 		sectionsColor: [ '#fff', '#c0dfd9', '#f6f1ed', '#fff'],
     anchors: ['Home', 'About', 'Portfolio', 'Contact'],
 		menu: '#menu',
-    // responsive: 900
-		css3: true
+    easing: 'easeInExpo',
+  	css3: true
 	});
 
   // invoking particles.js, had to put JSON file manually as the file is not hosted on a server
   particlesJS("particles-js", {
     "particles": {
       "number": {
-        "value": 50,
+        "value": 60,
         "density": {
           "enable": true,
           "value_area": 800
@@ -33,7 +33,7 @@ $(document).ready(function(){
       "shape": {
         "type": "circle",
         "stroke": {
-          "width": 0,
+          "width": 1,
           "color": "#3fb0ac"
         },
         "polygon": {
@@ -56,12 +56,12 @@ $(document).ready(function(){
         }
       },
       "size": {
-        "value": 3,
+        "value": 2,
         "random": true,
         "anim": {
           "enable": false,
-          "speed": 40,
-          "size_min": 0.1,
+          "speed": 6,
+          "size_min": 0.5,
           "sync": false
         }
       },
@@ -69,16 +69,16 @@ $(document).ready(function(){
         "enable": true,
         "distance": 150,
         "color": "#173e43",
-        "opacity": 0.4,
-        "width": 1
+        "opacity": 1,
+        "width": 0.3
       },
       "move": {
         "enable": true,
-        "speed": 4,
+        "speed": 1.3,
         "direction": "none",
         "random": false,
         "straight": false,
-        "out_mode": "out",
+        "out_mode": "bounce",
         "bounce": false,
         "attract": {
           "enable": false,
@@ -91,11 +91,11 @@ $(document).ready(function(){
       "detect_on": "canvas",
       "events": {
         "onhover": {
-          "enable": false,
-          "mode": "repulse"
+          "enable": true,
+          "mode": "grab"
         },
         "onclick": {
-          "enable": false,
+          "enable": true,
           "mode": "push"
         },
         "resize": true
@@ -104,7 +104,7 @@ $(document).ready(function(){
         "grab": {
           "distance": 400,
           "line_linked": {
-            "opacity": 1
+            "opacity": 0.5
           }
         },
         "bubble": {
@@ -119,7 +119,7 @@ $(document).ready(function(){
           "duration": 0.4
         },
         "push": {
-          "particles_nb": 4
+          "particles_nb": 0.3
         },
         "remove": {
           "particles_nb": 2
@@ -128,9 +128,6 @@ $(document).ready(function(){
     },
     "retina_detect": true
   });
-
-
-
 
   $(".contact").append(pattern.canvas());
 
@@ -146,7 +143,7 @@ $(document).ready(function(){
   });
 
 
-  $('.lastmodified').text("Last modified on " + document.lastModified.split(" ")[0]);
+  $('.lastmodified').text("Last updated on " + document.lastModified.split(" ")[0]);
 
   // text rotator
   $(".rotate").textrotator({
