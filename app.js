@@ -10,8 +10,8 @@ $(document).ready(function(){
 
   // invoking fullpage.js
   $('#fullpage').fullpage({
-		sectionsColor: [ '#fff', '#c0dfd9', '#f6f1ed', '#fff'],
-    anchors: ['Home', 'About', 'Portfolio', 'Contact'],
+		sectionsColor: [ '#fff', '#c0dfd9','#fff', '#f6f1ed', '#fff'],
+    anchors: ['Home', 'About', 'Skills','Portfolio', 'Contact'],
 		menu: '#menu',
     easing: 'easeInExpo',
   	css3: true
