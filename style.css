@@ -3,6 +3,10 @@
   font-family: 'Varela',sans-serif;
  }
 
+ figure {
+   display: inline-block;
+ }
+
  .name  {
   font-size: 40px;
   letter-spacing: 12px;
@@ -93,7 +97,12 @@ h4 {
 .tech-skills {
   text-align: center;
   font-size: 27px;
-  color: #fff;
+    background: url('images/water.jpeg')no-repeat;
+    background-size: cover;
+    /*background-position: 47% center;*/
+    /*background-repeat: no-repeat;*/
+    text-align: center;
+
 }
 
 .fp-controlArrow.fp-next {
@@ -247,7 +256,52 @@ h4 {
 }
 
 
+.skills-container {
+ /*margin-right: -15px;
+ margin-left: -15px;*/
+ width: 1005px;
+ margin: 0 auto;
 
+}
+
+.skills-grid {
+  width: 1005px;
+  margin: 0 auto;
+  /*margin-top: 15px;*/
+}
+
+.skills-grid figure {
+    position: relative;
+    overflow: hidden;
+    max-width: 48%;
+    max-height: 360px;
+    height: 50%;
+    /*width: 70%;*/
+    text-align: center;
+    cursor: pointer;
+    margin: 0 90px 10px 0;
+    float: left;
+}
+
+.skills-grid figure.effect-roxy {
+    border: 1px solid rgba(255, 255, 255, .35);
+}
+.skills-grid figure.effect-roxy:hover {
+    border-color: rgba(255, 255, 255, .9);
+}
+.skills-grid figure.effect-roxy:hover p {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+.skills-grid figure.effect-roxy p {
+    opacity: 0;
+    transition: opacity 0.35s, transform 0.35s;
+    transform: translate3d(-10px, 0, 0);
+}
+
+.skills-grid figure p {
+    letter-spacing: 1px;
+    font-size: 68.5%;
 
 
 /*iphone 5*/
