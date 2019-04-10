@@ -19,5 +19,8 @@
     "jquery": "^2.2.3",
     "fullpage.js": "2.7.9",
     "lightbox2": "^2.8.2"
+  },
+  "resolutions": {
+    "jquery": "^2.2.3"
   }
 }
